@@ -4,5 +4,30 @@
   </head>
   <body>
     <h1>ESP32 Testing</h1>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDtHZZsxBQYakdcOB6K34gfnAZ9szd-v08",
+        authDomain: "esp32-myshaak.firebaseapp.com",
+        databaseURL: "https://esp32-myshaak-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "esp32-myshaak",
+        storageBucket: "esp32-myshaak.appspot.com",
+        messagingSenderId: "172879735181",
+        appId: "1:172879735181:web:de14cc5aa1086a8cea75c4",
+        measurementId: "G-BZJPJRW3XV"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
